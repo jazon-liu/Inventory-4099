@@ -6,5 +6,7 @@ const path = require('path');
 let items = JSON.parse(fs.readFileSync(path.join(__dirname, "../items.json"), "utf8"))
 
 // Define functions
-
+function populateTable() {
+  
+}
 // Website actions

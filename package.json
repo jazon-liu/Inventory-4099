@@ -1,0 +1,24 @@
+{
+  "name": "inventory-4099",
+  "version": "1.0.0",
+  "description": "Revamped inventory system for FRC Team 4099",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jazon-liu/Inventory-4099.git"
+  },
+  "author": "Jason Liu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jazon-liu/Inventory-4099/issues"
+  },
+  "homepage": "https://github.com/jazon-liu/Inventory-4099#readme",
+  "devDependencies": {
+    "webpack": "^4.25.1",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {}
+}
