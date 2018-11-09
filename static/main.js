@@ -14,10 +14,8 @@ var config = {
 firebase.initializeApp(config);
 
 let db = firebase.database();
+let elementCount;
 
-for (let i = 0; i < db; i++) {
-  console.log(i)
-}
 
 
 // Load item file
