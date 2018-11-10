@@ -2,19 +2,24 @@
 const fs = require('fs');
 const path = require('path');
 const firebase = require('firebase');
+const fetch = require('fetch');
 
 // Firebase Stuff
 let auth = JSON.parse(fs.readFileSync(path.join(__dirname, "../auth.json"), "utf8"))
 var config = {
   apiKey: auth.key,
-  authDomain: auth.project + ".firebaseapp.com",
-  databaseURL: "https://" + auth.project + ".firebaseio.com",
-  storageBucket: auth.project + ".appspot.com"
+  authDomain: "inventory-4099.firebaseapp.com",
+  databaseURL: "https://inventory-4099.firebaseio.com",
+  storageBucket: "inventory-4099.appspot.com"
 };
 firebase.initializeApp(config);
 
 let db = firebase.database();
-let elementCount;
+fetch("https://inventory-4099.firebaseio.com/data.json?shallow=true").then(response => {
+  return response.json();
+}).then(data => {
+  console.log(data);
+})
 
 
 
